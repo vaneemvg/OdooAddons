@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="paperformat_a4_landscape" model="report.paperformat">
+        <field name="name">A4 PDF Landscape</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Landscape</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">15</field>
+        <field name="margin_left">7</field>
+        <field name="margin_right">7</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">3</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <record id="view_product_partner_report" model="ir.ui.view">
+        <field name="name">Product partner report</field>
+        <field name="model">product.partner.report</field>
+        <field name="arch" type="xml">
+            <form>
+                <group string="Filter Options">
+                    <field name="date_start" required="1"/>
+                    <field name="date_end" required="1"/>
+<!--                    <field name="seller_ids" widget="many2many_tags" attrs=""/>-->
+                    <field name="main_seller_ids" widget="many2many_tags" attrs=""/>
+                    <field name="client_ids" widget="many2many_tags" />
+                    <field name="company_ids" widget="many2many_tags" />
+                    <field name="show_rectifying"/>
+                </group>
+                <footer>
+                    <button
+                            name="button_export_pdf"
+                            string="Print"
+                            type="object"
+                            class="btn-primary"
+                    />
+                    <button
+                            name="button_export_xlsx"
+                            string="Export XLSX"
+                            type="object"
+                            class="btn-primary"
+                    />
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window
+            id="action_product_partner_invoice_print"
+            name="Print Product Partner Invoice"
+            res_model="product.partner.report"
+            view_mode="form"
+            target="new"
+    />
+
+    <menuitem
+            action="action_product_partner_invoice_print"
+            id="menu_product_partner_print"
+            parent="account.menu_finance_reports"
+            sequence="200"
+    />
+</odoo>

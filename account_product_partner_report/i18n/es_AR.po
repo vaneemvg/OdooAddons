@@ -1,0 +1,217 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_product_partner_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20200629\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-25 20:45+0000\n"
+"PO-Revision-Date: 2023-10-25 20:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid "<strong>Cantidad</strong>"
+msgstr ""
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid "<strong>Cliente</strong>"
+msgstr ""
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid ""
+"<strong>Date</strong>:\n"
+"                            <br/>"
+msgstr ""
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid "<strong>Dirección Cliente</strong>"
+msgstr ""
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid "<strong>Fecha</strong>"
+msgstr ""
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid "<strong>Importe</strong>"
+msgstr ""
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid "<strong>Producto</strong>"
+msgstr ""
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid "<strong>Proveedor</strong>"
+msgstr ""
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid "<strong>Reference</strong>"
+msgstr ""
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid "<strong>Tipo</strong>"
+msgstr ""
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.view_product_partner_report
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__client_ids
+msgid "Clients"
+msgstr "Clientes"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__company_ids
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__date_end
+msgid "Date end"
+msgstr "Fecha final"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__date_start
+msgid "Date start"
+msgstr "Fecha inicio"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__display_name
+#: model:ir.model.fields,field_description:account_product_partner_report.field_report_account_product_partner_report_product_invoice_xls__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.view_product_partner_report
+msgid "Export XLSX"
+msgstr "Exportar XLSX"
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.view_product_partner_report
+msgid "Filter Options"
+msgstr "Opciones de filtrado"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__id
+#: model:ir.model.fields,field_description:account_product_partner_report.field_report_account_product_partner_report_product_invoice_xls__id
+msgid "ID"
+msgstr "Id"
+
+#. module: account_product_partner_report
+#: model:ir.model,name:account_product_partner_report.model_account_invoice_report
+msgid "Invoices Statistics"
+msgstr "Estadísticas de facturas"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report____last_update
+#: model:ir.model.fields,field_description:account_product_partner_report.field_report_account_product_partner_report_product_invoice_xls____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__write_uid
+msgid "Last Updated by"
+msgstr "Última modificación por"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__write_date
+msgid "Last Updated on"
+msgstr "Última modificación en"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_account_invoice_report__main_seller_id
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_product__main_seller_id
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_template__main_seller_id
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.view_account_invoice_report_search
+msgid "Main seller"
+msgstr "Proveedor principal"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__main_seller_ids
+msgid "Main sellers"
+msgstr "Proveedores principales"
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.view_product_partner_report
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: account_product_partner_report
+#: model:ir.actions.act_window,name:account_product_partner_report.action_product_partner_invoice_print
+#: model:ir.ui.menu,name:account_product_partner_report.menu_product_partner_print
+msgid "Print Product Partner Invoice"
+msgstr "Imprimir reporte productos facturados"
+
+#. module: account_product_partner_report
+#: model:ir.actions.report,name:account_product_partner_report.action_report_product_partner_invoice
+#: model:ir.model,name:account_product_partner_report.model_product_partner_report
+msgid "Product Partner Report"
+msgstr "Reporte productos facturados"
+
+#. module: account_product_partner_report
+#: model:ir.actions.report,name:account_product_partner_report.action_report_product_partner_invoice_xls
+msgid "Product Partner Report XLS"
+msgstr "Reporte XLS"
+
+#. module: account_product_partner_report
+#: model:ir.model,name:account_product_partner_report.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid "Reporte productos facturados"
+msgstr ""
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__seller_ids
+msgid "Sellers"
+msgstr "Proveedores"
+
+#. module: account_product_partner_report
+#: model:ir.model.fields,field_description:account_product_partner_report.field_product_partner_report__show_rectifying
+msgid "Show invoice rectifying"
+msgstr "Sumar facturas rectificativas"
+
+#. module: account_product_partner_report
+#: code:addons/account_product_partner_report/wizard/report_product_partner.py:0
+#, python-format
+msgid "You must set dates."
+msgstr "Debe seleccionar fechas"
+
+#. module: account_product_partner_report
+#: model_terms:ir.ui.view,arch_db:account_product_partner_report.report_product_partner_invoice_document
+msgid "al"
+msgstr "al"
+
+#. module: account_product_partner_report
+#: model:ir.model,name:account_product_partner_report.model_report_account_product_partner_report_product_invoice_xls
+msgid "report.account_product_partner_report.product_invoice_xls"
+msgstr ""

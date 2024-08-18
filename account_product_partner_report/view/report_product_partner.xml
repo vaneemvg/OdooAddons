@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <template id="report_product_partner_invoice_document">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <t t-set="items" t-value="o.get_item_to_print()"/>
+                <div class="page">
+                    <h2>Reporte productos facturados</h2>
+                    <div class="row mt32 mb32">
+                        <div class="col-10">
+                            <strong>Date</strong>:
+                            <br/>
+                            <t t-if="o.date_start">
+                                <span
+                                        t-field="o.date_start"
+                                        t-options='{"format": "dd/MM/YYYY"}'
+                                />
+                            </t>
+                            al
+                            <t t-if="o.date_end">
+                                <span
+                                        t-field="o.date_end"
+                                        t-options='{"format": "dd/MM/YYYY"}'
+                                />
+                            </t>
+                        </div>
+                    </div>
+                    <table class="table-sm o_main_table" style="width: 100%;">
+                        <thead>
+                            <th>
+                                <strong>Proveedor</strong>
+                            </th>
+                            <th>
+                                <strong>Fecha</strong>
+                            </th>
+                            <th>
+                                <strong>Cliente</strong>
+                            </th>
+                            <th>
+                                <strong>Dirección Cliente</strong>
+                            </th>
+                            <th>
+                                <strong>Producto</strong>
+                            </th>
+                            <th>
+                                <strong>Cantidad</strong>
+                            </th>
+
+                            <th>
+                                <strong>Tipo</strong>
+                            </th>
+
+                            <th>
+                                <strong>Importe</strong>
+                            </th>
+                            <th>
+                                <strong>Reference</strong>
+                            </th>
+                             <th>
+                                <strong>Origen</strong>
+                            </th>
+                             <th>
+                                <strong>Documento</strong>
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="items" t-as="item">
+                                <td>
+                                    <span t-esc="item['seller']"/>
+                                </td>
+                                <td>
+                                    <span t-esc="str(item['date'])[8:]+str(item['date'])[5:7]+str(item['date'])[:4]"/>
+                                </td>
+                                <td>
+                                    <span t-esc="item['client']"/>
+                                </td>
+                                <td>
+                                    <span t-esc="item['street']"/>
+                                </td>
+                                <td>
+                                    <span t-esc="item['product']"/>
+                                </td>
+                                <td style="text-align: center;">
+                                    <span t-esc="'{0:,.0f}'.format(item['quantity'])"/>
+                                </td>
+                                <td>
+                                    <span t-esc="item['type']"/>
+                                </td>
+
+                                <td style="text-align: right;">
+                                    <span t-esc="'{0:,.2f}'.format(item['price_total'])"/>
+                                </td>
+                                <td>
+                                    <span t-esc="item['reference']"/>
+                                </td>
+                                <td>
+                                    <span t-esc="item['origin']"/>
+                                </td>
+                                <td>
+                                    <span t-esc="item['move_name']"/>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+    <template id="report_product_partner_invoice">
+        <t t-foreach="docs" t-as="o">
+            <t
+                    t-call="account_product_partner_report.report_product_partner_invoice_document"
+                    t-lang="o.env.user.lang"
+            />
+        </t>
+    </template>
+    <report
+            id="action_report_product_partner_invoice"
+            model="product.partner.report"
+            string="Product Partner Report"
+            report_type="qweb-pdf"
+            name="account_product_partner_report.report_product_partner_invoice"
+            file="account_product_partner_report.report_product_partner_invoice"
+            paperformat="paperformat_a4_landscape"
+    />
+    <report
+            id="action_report_product_partner_invoice_xls"
+            model="product.partner.report"
+            string="Product Partner Report XLS"
+            report_type="xlsx"
+            name="account_product_partner_report.product_invoice_xls"
+            file="account_product_partner_report.product_invoice_xls"
+    />
+</odoo>

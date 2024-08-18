@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="whatsapp_send_msg_wizard_crm" model="ir.ui.view">
+            <field name="name">whatsapp.message.wizard.form.crm</field>
+            <field name="model">whatsapp.message.wizard.crm</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Whatsapp Message">
+                    <group>
+                        <field name="user_id"/>
+                        <field name="phone"/>
+                    </group>
+                    <group>
+                        <field name="message"/>
+                    </group>
+                    <footer>
+                        <button name="send_message_crm" string="Send" type="object"/>
+                        <button name="cancel" string="Cancel" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
